@@ -1,0 +1,6 @@
+partial alphanumeric_keys
+xkb_symbols "fixed" {
+    include "us(basic)"
+
+    key <KPDL> { [ Delete, Delete ] };
+};
