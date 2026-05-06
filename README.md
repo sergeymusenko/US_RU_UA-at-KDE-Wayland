@@ -1,50 +1,54 @@
-## KDE Plasma @ WAYLAND - US/RU keyboard with UA symbols
+## KDE Plasma @ WAYLAND — US/RU розкладка з UA символами
 
-```
-# скопировать
+```bash
+# скопіювати
 ~/.config/xkb/symbols/ru
 ~/.config/xkb/symbols/us
 ~/.config/kxkbrc
 ```
 
-или настроить kxkbrc из командной строки:
-```
+або налаштувати kxkbrc з командного рядка:
+```bash
 kwriteconfig5 --file kxkbrc --group Layout --key LayoutList "us,ru"
 kwriteconfig5 --file kxkbrc --group Layout --key VariantList "fixed,fixed"
 kwriteconfig5 --file kxkbrc --group Layout --key DisplayNames "US,ru"
 ```
 
-`перелогиниться!`
+`перезайти в систему!`
 
-### Что даёт
+---
 
-| | |
-|---|---|
-| KP_Delete | работает в GoogleChrome (no InputRemapper!) |
-| Menu (удерживать) | модификатор для украинских символов в RU,<br>работает как Menu для US |
-| UA символы| u:ґ, s:і, ]:ї, ":є (и заглавные с Shift)|
-| Флаги и названия в трее | US 🇺🇸 и RU 🇷🇺, как обычно |
-| Устойчивость | обновления системы не затронут `~/.config/xkb/` |
-| Ctrl+Shift| переключение раскладки |
-| Right-Alt (удерживать) | переключение раскладки |
-| Caps | отключен |
+### Що це дає
 
+| Можливість | Опис |
+| :--- | :--- |
+| **KP_Delete** | працює в Google Chrome (без InputRemapper!) |
+| **Menu (утримувати)** | модифікатор для українських символів у RU, працює як Menu для US |
+| **UA символи** | Клавіші:  u:ґ,  s:і,  ]:ї,  ":є  (та великі з Shift) |
+| **Прапори та назви в треї** | US 🇺🇸 та RU 🇷🇺, як зазвичай |
+| **Стійкість** | оновлення системи не зачеплять `~/.config/xkb/` |
+| **Ctrl+Shift** | постійне перемикання розкладки |
+| **Right-Alt (утримувати)** | перемикання розкладки |
+| **Caps** | вимкнено |
 
-## Настроить клавиши в Midnight Commander (konsole)
+---
 
-### Konsole -> Настроить профиль -> Клавиатура -> По умолчанию (XFree 4) -> Изменить (или создать Profile: MC). Переназначить коды клавиш:
-- `Backspace+Ctrl` → `\x7f` — для Ctrl+Backspace
-- `Del+Ctrl` → `\Ed` — для Ctrl+Del
-- `Del+AnyModifier` → `\E[3~` — для Del
-- `Del+KeyPad` → `\E[3~` — для KP_Del
+## Налаштування клавіш у Midnight Commander (konsole)
+
+### Konsole -> Налаштувати профіль -> Клавіатура -> Типово (XFree 4) -> Змінити (або створити профіль: MC). Перепризначити коди клавіш:
+*   `Backspace+Ctrl` → `\x7f` — для Ctrl+Backspace
+*   `Del+Ctrl` → `\Ed` — для Ctrl+Del
+*   `Del+AnyModifier` → `\E[3~` — для Del
+*   `Del+KeyPad` → `\E[3~` — для KP_Del
 
 ### mc.keymap (`~/.config/mc/mc.keymap`)
-- в секции *[input]* и *[editor]*:<br>
-	`DeleteToWordBegin = alt-backspace; ctrl-backspace`
-- в секции *[input]*:<br>
-	`DeleteToWordEnd = alt-d; ctrl-delete`
+*   у секціях **[input]** та **[editor]**:
+    `DeleteToWordBegin = alt-backspace; ctrl-backspace`
+*   у секції **[input]**:
+    `DeleteToWordEnd = alt-d; ctrl-delete`
 
-### mc.macros (`~/.local/share/mc/mc.macros`) - макрос для Ctrl+A
-- `ctrl-A=Bottom:-1;End:-1;Mark:-1;Home:-1;Top:-1;Mark:-1;`
+### mc.macros (`~/.local/share/mc/mc.macros`) — макрос для Ctrl+A
+*   `ctrl-A=Bottom:-1;End:-1;Mark:-1;Home:-1;Top:-1;Mark:-1;`
 
-_Отзывы/пожелания приветствуются!_
+---
+_Відгуки/побажання вітаються!_
