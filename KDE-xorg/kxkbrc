@@ -1,0 +1,7 @@
+[Layout]
+DisplayNames=US,ru
+LayoutList=us_fixed,ru_fixed
+Options=caps:none,grp_led:caps,grp_led:num,grp_led:scroll,grp:ctrl_shift_toggle,grp:switch
+ResetOldOptions=true
+Use=true
+VariantList=,
