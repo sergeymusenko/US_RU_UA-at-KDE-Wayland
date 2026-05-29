@@ -3,6 +3,7 @@ xkb_symbols "fixed" {
     include "ru(winkeys)"
 
     key <MENU> { [ ISO_Level3_Shift ] };
+    key <CAPS> { [ ISO_Level3_Shift ] };
     modifier_map Mod5 { ISO_Level3_Shift };
 
     key <AD07> { [ NoSymbol, NoSymbol, Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN ] };
