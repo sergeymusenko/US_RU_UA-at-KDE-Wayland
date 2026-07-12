@@ -1,7 +1,19 @@
 partial alphanumeric_keys
 xkb_symbols "fixed" {
 	include "us(basic)"
-	key <KPDL> { [ Delete, Delete ] };
+
+    // Настройка Key Pad
+    key <KP8>  { [ Up,     Up     ] };
+    key <KP4>  { [ Left,   Left   ] };
+    key <KP6>  { [ Right,  Right  ] };
+    key <KP2>  { [ Down,   Down   ] };
+    key <KP7>  { [ Home,   Home   ] };
+    key <KP9>  { [ Prior,  Prior  ] };
+    key <KP1>  { [ End,    End    ] };
+    key <KP3>  { [ Next,   Next   ] };
+    key <KP5>  { [ Begin,  Begin  ] };
+    key <KPDL> { [ Delete, Delete ] };
+
 	// Кнопка возле левого Shift (keycode 94)
 	key <LSGT> { [ EuroSign, degree ] };
 };

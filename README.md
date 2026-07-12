@@ -23,6 +23,7 @@ kwriteconfig5 --file kxkbrc --group Layout --key DisplayNames "US,ru"
 | Можливість | Опис |
 | :--- | :--- |
 | **KP_Delete** | працює в Google Chrome (без InputRemapper!) |
+| **Key Pad** | стрілки на KP працюють як звичайні стрілки |
 | **Menu (утримувати)** | модифікатор для українських символів у RU,<br>працює як Menu для US |
 | **UA символи** | Клавіші:  u:ґ,  s:і,  ]:ї,  ":є  (та великі з Shift) |
 | **Прапори та назви в треї** | US 🇺🇸 та RU 🇷🇺, як зазвичай |
