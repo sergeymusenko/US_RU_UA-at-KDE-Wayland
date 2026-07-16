@@ -37,14 +37,16 @@ kwriteconfig5 --file kxkbrc --group Layout --key DisplayNames "US,ru"
 ## Налаштування клавіш у Midnight Commander (konsole)
 
 ### Konsole -> Налаштувати профіль -> Клавіатура -> Типово (XFree 4) -> Змінити (або створити профіль: MC). Перепризначити коди клавіш:
+
 |  Прив'язка клавіш |  Виведення | Для чого |
 | :--- | :--- |
-| `Backspace+Ctrl` | `\x7f` | для Ctrl+Backspace |
-| `Del+Ctrl` | `\Ed` | для Ctrl+Del |
-| `Del+AnyModifier` | `\E[3~` | для Del |
-| `Del+KeyPad` | `\E[3~` | для KP_Del |
-| `Ш+Alt` | `\Ei` | Alt+I з кирилиці (додати) |
-| `Щ+Alt` | `\Eo` | Alt+O з кирилиці (додати) |
+|  `Backspace+Ctrl` | `\x7f` | для Ctrl+Backspace |
+|  `Del+Ctrl` | `\Ed` | для Ctrl+Del |
+|  `Del+AnyModifier` | `\E[3~` | для Del |
+|  `Del+KeyPad` | `\E[3~` | для KP_Del |
+|  `Ш+Alt` | `\Ei` | Alt+I з кирилиці (додати) |
+|  `Щ+Alt` | `\Eo` | Alt+O з кирилиці (додати) |
+
 *	Збережіть усе
 *	Konsole треба перезапустити
 
