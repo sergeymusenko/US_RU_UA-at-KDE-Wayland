@@ -39,7 +39,7 @@ kwriteconfig5 --file kxkbrc --group Layout --key DisplayNames "US,ru"
 ### Konsole -> Налаштувати профіль -> Клавіатура -> Типово (XFree 4) -> Змінити (або створити профіль: MC). Перепризначити коди клавіш:
 
 |  Прив'язка клавіш |  Виведення | Для чого |
-| :--- | :--- |
+| :--- | :--- | :--- |
 |  `Backspace+Ctrl` | `\x7f` | для Ctrl+Backspace |
 |  `Del+Ctrl` | `\Ed` | для Ctrl+Del |
 |  `Del+AnyModifier` | `\E[3~` | для Del |
